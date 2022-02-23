@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+
+<body>
+    <h1>Exibir maior valor</h1>
+    <h3>Digite os valores</h3>
+    <input type="text" name="txtnum1" id="txtnum1" placeholder="Digite aqui">
+    <input type="text" name="txtnum2" id="txtnum2" placeholder="Digite aqui">
+    <input type="text" name="txtnum3" id="txtnum3" placeholder="Digite aqui">
+    <input type="text" name="txtnum4" id="txtnum4" placeholder="Digite aqui">
+    <input type="text" name="txtnum5" id="txtnum5" placeholder="Digite aqui">
+
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="div.num">...</div>
+    <script>
+        function verificar() {
+            var in_num1 = document.getElementById('txtnum1')
+            var in_num2 = document.getElementById('txtnum2')
+            var in_num3 = document.getElementById('txtnum3')
+            var in_num4 = document.getElementById('txtnum4')
+            var in_num5 = document.getElementById('txtnum5')
+
+            var div_num = document.getElementById('div.num')
+
+            var num1 = (in_num1.value)
+            var num2 = (in_num2.value)
+            var num3 = (in_num3.value)
+            var num4 = (in_num4.value)
+            var num5 = (in_num5.value)
+
+            let num = [num1, num2, num3, num4, num5]
+            num.sort()
+
+
+            div_num.innerHTML = (`O maior valor é: ${num[4]}`)
+
+
+        }
+    </script>
+</body>
+
+</html>

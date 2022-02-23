@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert</title>
+</head>
+<body>
+    <h1>Qual seu nome? </h1>
+
+    <script>
+        function enviar(nome){
+            if (typeof nome == "String") {
+                
+            var nome = window.document.getElementById(nome)
+        }    
+            alert(nome.value)
+    }
+
+    </script>
+    <input type="text" value="texto" id="texto" placeholder="Digite aqui">
+    <input type="button" value="enviar" onclick="alert('Seu nome é: ' + document.getElementById('texto').value)">
+</body>
+</html>

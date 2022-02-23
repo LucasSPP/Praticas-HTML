@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaScript</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var nome = prompt("Digite seu nome: ")
+        alert("Bem vindo, " + nome);
+        var idade = prompt("Qual sua idade: ");
+        alert("Você tem " + idade + " anos de idade");
+
+        var n1 = parseInt(prompt("Informe o primeiro número"));
+        var n2 = parseInt(prompt("Informe o segundo número"));
+        var n3 = parseInt(prompt("Informe o terceiro número"));
+        var media = (n1 + n2 + n3) / 3;
+        alert('O resultado da média é ' + media)
+        alert(nome + ' sua idade é ' + idade + ' o resultado da média é ' + (n1 + n2 + n3) / 3)
+        if (media >= 6) {
+
+            alert('Aluno aprovado')
+        }
+        else if (media < 6) {
+            alert('Aluno reprovado')
+
+        }
+        else {
+            alert("Numero invalido!");
+        }
+        var op;
+        switch (op) {
+            case 1:
+                if(media >= 6 && media < 10){
+                alert(" Aprovado");}
+                break;
+            case 2:
+                if(media < 6){
+                alert(" Reprovado");}
+                break;
+            case 3:
+                if(media == 10){
+                alert(" Nota maxima");}
+                break;
+            default:
+                if (media > 10 || media < 0) {
+                    
+                alert('valor invalido')
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>

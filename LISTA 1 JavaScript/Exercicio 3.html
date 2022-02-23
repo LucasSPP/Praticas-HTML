@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações matemáticas</title>
+</head>
+<body>
+    <h1>Operações matemáticas</h1>
+    <input type="number" name="txt1" id="txt1" placeholder="Digite aqui">
+    <input type="number" name="txt2" id="txt2" placeholder="Digite aqui">
+    <input type="button" value="Calcular" onclick="enviar()">
+
+    <div id="soma">Resultado soma</div>
+    <div id="sub" >Resultado subtração</div>
+    <div id="mult">Resultado multiplicação</div>
+    <div id="divi">Resultado divisão</div>
+
+    <script>
+        function enviar(){
+            var txn1 = window.document.getElementById('txt1')
+            var txn2 = window.document.getElementById('txt2')
+
+            var somar = window.document.getElementById('soma')
+            var subt = window.document.getElementById('sub')
+            var multi = window.document.getElementById('mult')
+            var dividir = window.document.getElementById('divi')
+
+            var n1 = Number(txn1.value)
+            var n2 = Number(txn2.value)
+            
+            var soma = n1 + n2
+            var sub = n1 - n2
+            var mult = n1 * n2
+            var div = n1 / n2
+
+            somar.innerHTML = 'Resultado da soma igual a: ' + soma
+            subt.innerHTML = 'Resultado da subtração igual a: ' + sub
+            multi.innerHTML = 'Resultado da multiplicação igual a: ' + mult
+            dividir.innerHTML = 'Resultado da divisão igual a: ' + div
+        }
+    </script>
+</body>
+</html>

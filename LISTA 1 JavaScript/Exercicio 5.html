@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potenciação</title>
+</head>
+
+<body>
+    <h1>Calcular Potenciação</h1>
+    <input type="number" name="txt1" id="txt1" placeholder="Digite aqui">
+    <input type="number" name="txt2" id="txt2" placeholder="Digite aqui">
+    <input type="number" name="txt3" id="txt3" placeholder="Digite aqui">
+    <input type="number" name="txt4" id="txt4" placeholder="Digite aqui">
+    <input type="number" name="txt5" id="txt5" placeholder="Digite aqui">
+    <input type="button" value="Calcular" onclick="enviar()">
+
+    <div id="n1">Resultado</div>
+    <div id="n2">Resultado</div>
+    <div id="n3">Resultado</div>
+    <div id="n4">Resultado</div>
+    <div id="n5">Resultado</div>
+
+
+    <script>
+        function enviar() {
+            var txn1 = window.document.getElementById('txt1')
+            var txn2 = window.document.getElementById('txt2')
+            var txn3 = window.document.getElementById('txt3')
+            var txn4 = window.document.getElementById('txt4')
+            var txn5 = window.document.getElementById('txt5')
+
+            var pt1 = window.document.getElementById('n1')
+            var pt2 = window.document.getElementById('n2')
+            var pt3 = window.document.getElementById('n3')
+            var pt4 = window.document.getElementById('n4')
+            var pt5 = window.document.getElementById('n5')
+
+            var n1 = Number(txn1.value)
+            var n2 = Number(txn2.value)
+            var n3 = Number(txn3.value)
+            var n4 = Number(txn4.value)
+            var n5 = Number(txn5.value)
+
+            var potencia1 = n1 ** 2
+            var potencia2 = n2 ** 2
+            var potencia3 = n3 ** 2
+            var potencia4 = n4 ** 2
+            var potencia5 = n5 ** 2
+
+            pt1.innerHTML = n1 + ' ao quadrado é igual a: ' + potencia1
+            pt2.innerHTML = n2 + ' ao quadrado é igual a: ' + potencia2
+            pt3.innerHTML = n3 + ' ao quadrado é igual a: ' + potencia3
+            pt4.innerHTML = n4 + ' ao quadrado é igual a: ' + potencia4
+            pt5.innerHTML = n5 + ' ao quadrado é igual a: ' + potencia5
+        }
+    </script>
+</body>
+
+</html>

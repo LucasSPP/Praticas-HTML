@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style id="cor">
+        body {
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div.cor"></div>
+    <script>
+        function trocar() {
+            var fundo = document.body.style.background = 'blue'
+            if (fundo == 'blue') {
+                document.body.style.background = 'pink'
+
+            }
+
+        }
+        function trocar1() {
+            var fundo = document.body.style.background = 'pink'
+            if (fundo == 'pink') {
+                document.body.style.background = 'black'
+
+            }
+
+        }
+        function trocar2() {
+            var fundo = document.body.style.background = 'black'
+            if (fundo == 'black') {
+                document.body.style.background = 'green'
+
+            }
+
+        }
+
+
+    </script>
+
+    <input type="button" value="trocar" onclick="trocar()">
+    <input type="button" value="trocar1" onclick="trocar1()">
+    <input type="button" value="trocar2" onclick="trocar2()">
+
+
+
+</body>
+
+</html>
