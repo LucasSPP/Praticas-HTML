@@ -1,2 +1,2 @@
-# Praticas-JavaScript
+# Praticas-HTML
 Desenvolvimento web
